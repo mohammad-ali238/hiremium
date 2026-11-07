@@ -1,4 +1,4 @@
-# Hiremium --- AI-Powered Bulk Resume Screening & Recruitment SaaS
+# Hiremium | AI-Powered Bulk Resume Screening & Recruitment SaaS
 
 **Live demo:** <https://hiremium.com>
 
