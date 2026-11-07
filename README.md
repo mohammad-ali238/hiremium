@@ -19,11 +19,9 @@ and Laravel Horizon.
 
 ## Screenshots & Walkthrough
 
-> Screenshots are expected in the repository's `screenshots/` directory.
-
 ### 1. Recruiter Dashboard
 
-![Recruiter dashboard](screenshots/dashboard.png)
+![Recruiter dashboard](https://workeera.com/git/hiremium/screenshots/user-dashboard.png)
 
 The main workspace overview, including total candidates, active jobs,
 top matches, current billing-cycle AI usage, best candidates, and a
@@ -31,7 +29,7 @@ summary of missing skills across the applicant pool.
 
 ### 2. Jobs Management
 
-![Jobs management](screenshots/jobs.png)
+![Jobs management](https://workeera.com/git/hiremium/screenshots/dashboard-jobs.png)
 
 Create and manage job posts, review job status and required skills
 (must-have and nice-to-have), and start a resume upload directly from a
@@ -39,7 +37,7 @@ job row.
 
 ### 3. Matched Candidates & Scoring
 
-![Matched candidates](screenshots/candidates.png)
+![Matched candidates](https://workeera.com/git/hiremium/screenshots/cv-batch-upload-results.png)
 
 Review parsed candidates and their match scores (0--100). Candidates are
 grouped into fit categories such as Excellent, Good, and Low Fit based
@@ -47,7 +45,7 @@ on the AI analysis and job requirements.
 
 ### 4. Candidate Profile & AI Analysis
 
-![Candidate profile](screenshots/candidate-profile.png)
+![Candidate profile](https://workeera.com/git/hiremium/screenshots/resume-match-result-with-reasons.png)
 
 Explore an individual candidate's AI-generated summary, reasons to hire
 and potential concerns, Skills/Experience/Education sub-scores, and
@@ -55,7 +53,7 @@ matched versus missing skills.
 
 ### 5. AI Usage & Token Analytics
 
-![AI usage analytics](screenshots/usage.png)
+![AI usage analytics](https://workeera.com/git/hiremium/screenshots/admin-usage.png)
 
 Workspace admins can monitor AI consumption, including token usage by
 provider (OpenAI and Gemini), and review usage trends to help manage
@@ -63,7 +61,7 @@ subscription credits.
 
 ### 6. Bulk Resume Batches & Queue Processing
 
-![Resume batches](screenshots/batches.png)
+![Resume batches](https://workeera.com/git/hiremium/screenshots/admin-resume-batches.png)
 
 Track each uploaded batch through the processing pipeline, including
 uploaded, parsed, analyzed, partially completed, and waiting-for-credits
@@ -71,7 +69,7 @@ states.
 
 ### 7. AI Settings & Guardrails
 
-![AI settings](screenshots/ai-settings.png)
+![AI settings](https://workeera.com/git/hiremium/screenshots/admin-ai-settings.png)
 
 Configure evaluation strictness and job-specific rules. Critical checks
 are enforced in application code rather than relying only on AI prompts.
@@ -81,7 +79,7 @@ requirements are not met.
 
 ### 8. Per-File AI Usage Logs
 
-![AI usage logs](screenshots/ai-logs.png)
+![AI usage logs](https://workeera.com/git/hiremium/screenshots/admin-AI-usage-log.png)
 
 Inspect an audit trail of AI operations, including parsing and matching
 actions, model/provider, token consumption, credits deducted, confidence
