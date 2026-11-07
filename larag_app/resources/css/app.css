@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+| Design tokens
+| --------------------------------------------------------------------------
+| Single source of truth for dashboard theming. Values are space-separated
+| RGB channels so Tailwind can apply opacity (see tailwind.config.js). The
+| marketing site ignores these; the dashboard shell (.dark toggled on <html>)
+| consumes them.
+*/
+@layer base {
+    :root {
+        --hm-bg: 248 250 252;        /* slate-50  */
+        --hm-surface: 255 255 255;   /* white     */
+        --hm-card: 255 255 255;
+        --hm-border: 226 232 240;    /* slate-200 */
+        --hm-text: 15 23 42;         /* slate-900 */
+        --hm-muted: 100 116 139;     /* slate-500 */
+        --hm-primary: 79 70 229;     /* indigo-600 */
+        --hm-primary-fg: 255 255 255;
+        --hm-primary-soft: 238 242 255; /* indigo-50 */
+        --hm-success: 22 163 74;     /* green-600 */
+        --hm-warning: 202 138 4;     /* yellow-600 */
+        --hm-danger: 220 38 38;      /* red-600 */
+        --hm-ring: 99 102 241;       /* indigo-500 */
+    }
+
+    .dark {
+        --hm-bg: 2 6 23;             /* slate-950 */
+        --hm-surface: 15 23 42;      /* slate-900 */
+        --hm-card: 15 23 42;
+        --hm-border: 30 41 59;       /* slate-800 */
+        --hm-text: 241 245 249;      /* slate-100 */
+        --hm-muted: 148 163 184;     /* slate-400 */
+        --hm-primary: 129 140 248;   /* indigo-400 */
+        --hm-primary-fg: 15 23 42;   /* slate-900 */
+        --hm-primary-soft: 30 27 75; /* indigo-950 */
+        --hm-success: 34 197 94;
+        --hm-warning: 234 179 8;
+        --hm-danger: 248 113 113;
+        --hm-ring: 129 140 248;
+    }
+}
+
+/* Print: drop the dashboard chrome so reports print/PDF cleanly. */
+@media print {
+    aside,
+    header {
+        display: none !important;
+    }
+    .lg\:pl-64 {
+        padding-left: 0 !important;
+    }
+    body {
+        background: #fff !important;
+    }
+}
+
+/* ------------------------------------------------------------------------
+ | Rich-text editor (Quill 2, "snow" theme) — job descriptions. Restyled to the
+ | dashboard tokens for light + dark, plus `.rich-prose` for read-only output.
+ * --------------------------------------------------------------------- */
+.rich-editor .ql-toolbar.ql-snow {
+    @apply rounded-t-lg border border-line bg-surface;
+    border-bottom: 0;
+}
+.rich-editor .ql-container.ql-snow {
+    @apply rounded-b-lg border border-line bg-surface;
+    font-family: inherit;
+    font-size: 0.875rem;
+}
+.rich-editor .ql-editor {
+    /* About 9 lines tall, scrolls internally as content grows. */
+    @apply leading-6 text-app-text;
+    min-height: 13.5rem;
+    max-height: 21rem;
+    overflow-y: auto;
+}
+.rich-editor .ql-editor.ql-blank::before {
+    color: rgb(var(--hm-muted));
+    font-style: normal;
+}
+.rich-editor .ql-snow .ql-stroke { stroke: rgb(var(--hm-text)); }
+.rich-editor .ql-snow .ql-fill { fill: rgb(var(--hm-text)); }
+.rich-editor .ql-snow .ql-picker { color: rgb(var(--hm-text)); }
+.rich-editor .ql-snow .ql-active .ql-stroke,
+.rich-editor .ql-snow button:hover .ql-stroke { stroke: rgb(var(--hm-primary)); }
+.rich-editor .ql-snow .ql-active .ql-fill,
+.rich-editor .ql-snow button:hover .ql-fill { fill: rgb(var(--hm-primary)); }
+.rich-editor .ql-container.ql-snow:focus-within {
+    @apply border-primary ring-2 ring-primary/30;
+}
+
+/* Editor content + read-only rendering of saved descriptions */
+.rich-editor .ql-editor, .rich-prose {
+    @apply text-sm leading-6 text-app-text;
+}
+.rich-editor .ql-editor h2, .rich-prose h2 { @apply mt-4 mb-1.5 text-base font-semibold; }
+.rich-editor .ql-editor h3, .rich-prose h3 { @apply mt-3 mb-1 text-sm font-semibold; }
+.rich-prose ul { @apply my-2 list-disc pl-5; }
+.rich-prose ol { @apply my-2 list-decimal pl-5; }
+.rich-prose li { @apply my-0.5; }
+.rich-editor .ql-editor blockquote, .rich-prose blockquote {
+    @apply my-2 border-l-2 border-line pl-3 italic text-muted;
+}
+.rich-prose p { @apply my-2; }

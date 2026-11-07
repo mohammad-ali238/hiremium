@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" role="img" aria-label="Job and application being matched into a score">
+  <defs>
+    <linearGradient id="scSheetG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="scRingG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- soft backdrop shapes -->
+  <circle cx="60" cy="52" r="42" fill="#ffffff" opacity="0.08"/>
+  <circle cx="386" cy="256" r="56" fill="#ffffff" opacity="0.08"/>
+  <circle cx="356" cy="34" r="6" fill="#A5B4FC" opacity="0.7"/>
+  <circle cx="34" cy="238" r="5" fill="#A5B4FC" opacity="0.7"/>
+  <path d="M38 96 l5 -12 5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 z" fill="#FDE68A" opacity="0.9"/>
+
+  <!-- job card -->
+  <g transform="rotate(-5 110 110)">
+    <rect x="34" y="48" width="150" height="118" rx="12" fill="url(#scSheetG)" stroke="#C7D2FE" stroke-width="2"/>
+    <rect x="50" y="64" width="24" height="24" rx="6" fill="#818CF8"/>
+    <path d="M56 76 h12 M62 70 v12" stroke="#EEF2FF" stroke-width="2.4" stroke-linecap="round"/>
+    <rect x="82" y="66" width="80" height="8" rx="4" fill="#6366F1"/>
+    <rect x="82" y="80" width="56" height="6" rx="3" fill="#A5B4FC"/>
+    <rect x="50" y="102" width="118" height="6" rx="3" fill="#C7D2FE"/>
+    <rect x="50" y="116" width="104" height="6" rx="3" fill="#C7D2FE"/>
+    <rect x="50" y="136" width="40" height="13" rx="6.5" fill="#E0E7FF"/>
+    <rect x="96" y="136" width="48" height="13" rx="6.5" fill="#E0E7FF"/>
+  </g>
+
+  <!-- application card -->
+  <g transform="rotate(4 130 232)">
+    <rect x="52" y="172" width="150" height="106" rx="12" fill="url(#scSheetG)" stroke="#C7D2FE" stroke-width="2"/>
+    <circle cx="80" cy="198" r="13" fill="#818CF8"/>
+    <path d="M80 193 a5 5 0 1 1 0 10 a5 5 0 1 1 0 -10 M70 207 q10 -8 20 0" fill="none" stroke="#EEF2FF" stroke-width="2.2" stroke-linecap="round"/>
+    <rect x="100" y="188" width="76" height="8" rx="4" fill="#6366F1"/>
+    <rect x="100" y="202" width="52" height="6" rx="3" fill="#A5B4FC"/>
+    <rect x="68" y="224" width="118" height="6" rx="3" fill="#C7D2FE"/>
+    <rect x="68" y="238" width="98" height="6" rx="3" fill="#C7D2FE"/>
+    <rect x="68" y="252" width="110" height="6" rx="3" fill="#DDE3F8"/>
+  </g>
+
+  <!-- connecting dots to the gauge -->
+  <g fill="#A5B4FC">
+    <circle cx="216" cy="118" r="3"/>
+    <circle cx="232" cy="124" r="3" opacity="0.7"/>
+    <circle cx="248" cy="130" r="3" opacity="0.45"/>
+    <circle cx="220" cy="206" r="3"/>
+    <circle cx="236" cy="196" r="3" opacity="0.7"/>
+    <circle cx="252" cy="186" r="3" opacity="0.45"/>
+  </g>
+
+  <!-- score gauge -->
+  <g transform="translate(322 152)">
+    <circle cx="0" cy="0" r="58" fill="#312E81" stroke="#4338CA" stroke-width="2"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#4338CA" stroke-width="9" opacity="0.55"/>
+    <!-- 92% arc -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#scRingG)" stroke-width="9" stroke-linecap="round"
+            stroke-dasharray="260.1 22.6" transform="rotate(-90)"/>
+    <text x="0" y="3" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#ffffff">92</text>
+    <text x="0" y="24" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#A5B4FC" letter-spacing="1">MATCH</text>
+  </g>
+
+  <!-- reason bubble -->
+  <g transform="translate(258 240)">
+    <rect x="0" y="0" width="132" height="40" rx="10" fill="#ffffff" opacity="0.95"/>
+    <path d="M20 0 l8 -10 4 10 z" fill="#ffffff" opacity="0.95"/>
+    <rect x="12" y="10" width="108" height="6" rx="3" fill="#818CF8"/>
+    <rect x="12" y="23" width="78" height="6" rx="3" fill="#C7D2FE"/>
+  </g>
+</svg>

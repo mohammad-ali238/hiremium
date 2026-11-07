@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 40" role="img" aria-label="Hiremium">
+  <defs>
+    <linearGradient id="hiremium-mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <!-- Lifted a step on the indigo ramp so the wordmark keeps its contrast on a dark surface. -->
+    <linearGradient id="hiremium-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C7D2FE"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- icon mark (same as favicon) -->
+  <g transform="translate(0 3) scale(0.86)">
+    <rect x="0" y="0" width="40" height="40" rx="10" fill="url(#hiremium-mark)"/>
+    <circle cx="20" cy="15.5" r="6" fill="#ffffff"/>
+    <path d="M8.5 32 a11.5 11.5 0 0 1 23 0 Z" fill="#ffffff"/>
+    <circle cx="29.5" cy="28" r="7.5" fill="#10B981" stroke="#ffffff" stroke-width="2"/>
+    <path d="M26 28 l2.4 2.4 l4.1 -4.6" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="46" y="30.5" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="27" font-weight="800" fill="#F8FAFC" letter-spacing="-1">Hire<tspan fill="url(#hiremium-accent)">mium</tspan></text>
+</svg>

@@ -1,0 +1,4 @@
+[21-Aug-2026 12:46:47 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/developer/public_html/lptuni/aijob/larag_app/app/Http/Controllers/CvFileController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/lptuni/aijob/larag_app/app/Http/Controllers/CvFileController.php on line 15

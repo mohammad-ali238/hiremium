@@ -1,0 +1,51 @@
+{
+  "_bootstrap-Bp1PqF3K.js": {
+    "file": "assets/bootstrap-Bp1PqF3K.js",
+    "name": "bootstrap"
+  },
+  "_livewire.esm-3hhOHK7q.js": {
+    "file": "assets/livewire.esm-3hhOHK7q.js",
+    "name": "livewire.esm"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-IqL4jonb.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DxfJdq9E.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_bootstrap-Bp1PqF3K.js"
+    ]
+  },
+  "resources/js/dashboard.js": {
+    "file": "assets/dashboard-BpZHKZrI.js",
+    "name": "dashboard",
+    "src": "resources/js/dashboard.js",
+    "isEntry": true,
+    "imports": [
+      "_bootstrap-Bp1PqF3K.js",
+      "_livewire.esm-3hhOHK7q.js"
+    ],
+    "css": [
+      "assets/dashboard-DVB7LGv8.css"
+    ]
+  },
+  "resources/js/tools.js": {
+    "file": "assets/tools-C1iO_5tY.js",
+    "name": "tools",
+    "src": "resources/js/tools.js",
+    "isEntry": true,
+    "imports": [
+      "_bootstrap-Bp1PqF3K.js",
+      "_livewire.esm-3hhOHK7q.js"
+    ]
+  }
+}
